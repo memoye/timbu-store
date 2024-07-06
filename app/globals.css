@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-custom-white: 198 71% 97%;
+  --color-primary: 40 49% 32%;
+  --color-secondary: 198 71% 15%;
+  --color-muted: 153 32% 90%;
+  --color-muted-foreground: 0 7% 5%; /* 60% */
+}
