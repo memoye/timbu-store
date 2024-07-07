@@ -4,8 +4,37 @@
 
 :root {
   --color-custom-white: 198 71% 97%;
-  --color-primary: 40 49% 32%;
+  --color-primary: 40deg 49% 32%;
   --color-secondary: 198 71% 15%;
+
+  --color-accent: 195 67% 37%;
+
   --color-muted: 153 32% 90%;
   --color-muted-foreground: 0 7% 5%; /* 60% */
+}
+
+@layer utilities {
+  .bindX {
+    @apply px-6 md:px-24;
+  }
+
+  .color-secondary {
+    @apply bg-secondary text-custom-white;
+  }
+
+  .color-primary {
+    @apply bg-primary text-custom-white;
+  }
+
+  .color-muted {
+    @apply bg-muted text-muted-foreground/60;
+  }
+
+  .flex-center-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
 }

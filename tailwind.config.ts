@@ -8,13 +8,35 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "custom-white": "hsl(var(--color-custom-white))",
+        primary: "hsl(var(--color-primary))",
+        secondary: "hsl(var(--color-secondary))",
+        accent: "hsl(var(--color-accent))",
+        muted: {
+          DEFAULT: "hsl(var(--color-muted))",
+          foreground: "hsl(var(--color-foreground))",
+        },
+      },
+
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+        "color-in": {
+          from: { filter: "grayscale(100%) brightness(50%) saturate(2)" },
+          to: { filter: "grayscale(0%) brightness(50%) saturate(2)" },
+        },
+      },
+      animation: {
+        "infinite-scroll-lr": "infinite-scroll 25s linear infinite",
+        "infinite-scroll-rl": "infinite-scroll 25s linear reverse",
+        "color-in": "color-in 2.5s ease-out forwards",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
