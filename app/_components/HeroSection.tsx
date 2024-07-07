@@ -5,6 +5,7 @@ import { Product } from "@/lib/definitions";
 import { topProducts } from "@/lib/dummyData";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { title } from "process";
 import { useState } from "react";
 
 const MAX = 6;
@@ -36,10 +37,10 @@ export function HeroSection() {
           <Image
             src={product.image!.src}
             key={currIndex}
-            className="animate-color-in gra z-0 h-full w-full max-w-[51.7rem] rounded-2xl object-cover brightness-50 saturate-200"
-            width={product.image!.w ?? 500}
-            height={product.image!.w ?? 500}
-            alt={product.image!.alt}
+            className="gra z-0 h-full w-full max-w-[51.7rem] animate-color-in rounded-2xl object-cover brightness-50 saturate-200"
+            width={product.image?.w ?? 500}
+            height={product.image?.w ?? 500}
+            alt={product.image?.alt ?? title}
           />
         </div>
 
