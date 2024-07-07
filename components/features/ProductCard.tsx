@@ -71,6 +71,13 @@ export function ProductCard({ data, className }: ProductCardProps) {
           >
             {title}
           </h3>
+          <Button
+            className="hidden w-full rounded-lg max-lg:text-sm lg:block"
+            size="lg"
+            fill
+          >
+            Buy Now
+          </Button>
         </div>
 
         {/* right side */}
