@@ -10,9 +10,9 @@ export interface Product {
   discount_percentage: number;
   image: {
     src: string;
-    alt: string;
+    alt?: string;
     w?: number;
     h?: number;
   };
-  features: string[];
+  features?: string[];
 }
