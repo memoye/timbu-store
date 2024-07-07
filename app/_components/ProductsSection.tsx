@@ -3,8 +3,10 @@ import { featuredProducts } from "@/lib/dummyData";
 
 export function ProductsSection() {
   return (
-    <div>
-      <ProductCard data={featuredProducts[0]} />
-    </div>
+    <section className="bindX grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8">
+      {featuredProducts.map((p) => (
+        <ProductCard key={p.id} data={p} className="" />
+      ))}
+    </section>
   );
 }

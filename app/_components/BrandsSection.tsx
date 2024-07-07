@@ -4,7 +4,7 @@ import Image from "next/image";
 export function BrandsSection() {
   return (
     <section className="my-12 flex flex-nowrap overflow-x-hidden whitespace-nowrap py-4 lg:mt-28">
-      <ul className="flex-center flex animate-infinite-scroll-lr flex-nowrap gap-8 whitespace-nowrap">
+      <ul className="flex-center flex animate-infinite-scroll-lr flex-nowrap gap-8 whitespace-nowrap lg:gap-12">
         {brands.map((b) => (
           <li className="flex-1" key={b.id}>
             <Image
@@ -17,7 +17,7 @@ export function BrandsSection() {
           </li>
         ))}
       </ul>
-      <ul className="flex-center flex animate-infinite-scroll-lr flex-nowrap gap-8 whitespace-nowrap">
+      <ul className="flex-center flex animate-infinite-scroll-lr flex-nowrap gap-8 whitespace-nowrap lg:gap-12">
         {brands.map((b) => (
           <li className="flex-1" key={b.id}>
             <Image

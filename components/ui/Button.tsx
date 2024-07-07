@@ -47,7 +47,7 @@ export function buttonVariants({ color, size, fill, className }: VariantProps) {
             color === "ghost_secondary",
         }
       : {
-          "border-secondary text-primary": !color || color === "primary",
+          "border-primary text-primary": !color || color === "primary",
           "border-primary text-secondary": color === "secondary",
           "border-transparent text-primary": color === "ghost_primary",
           "border-transparent text-secondary": color === "ghost_secondary",

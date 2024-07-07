@@ -162,7 +162,7 @@ export const featuredProducts: Product[] = [
     items_left: 40,
     price: 50000,
     reviews: 400,
-    rating: 20,
+    rating: 4,
   },
   {
     id: 2,
@@ -173,7 +173,7 @@ export const featuredProducts: Product[] = [
     items_left: 30,
     price: 70000,
     reviews: 400,
-    rating: 20,
+    rating: 4,
   },
   {
     id: 3,
@@ -184,7 +184,7 @@ export const featuredProducts: Product[] = [
     items_left: 20,
     price: 55000,
     reviews: 400,
-    rating: 20,
+    rating: 4,
   },
   {
     id: 4,
@@ -195,7 +195,7 @@ export const featuredProducts: Product[] = [
     items_left: 30,
     price: 75000,
     reviews: 430,
-    rating: 20,
+    rating: 4,
   },
   {
     id: 5,
@@ -206,7 +206,7 @@ export const featuredProducts: Product[] = [
     items_left: 30,
     price: 75000,
     reviews: 430,
-    rating: 20,
+    rating: 4,
   },
   {
     id: 5,
@@ -217,6 +217,6 @@ export const featuredProducts: Product[] = [
     items_left: 30,
     price: 75000,
     reviews: 430,
-    rating: 20,
+    rating: 4,
   },
 ];
