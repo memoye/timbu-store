@@ -59,7 +59,7 @@ export function ProductCard({ data, className }: ProductCardProps) {
         {/* left side */}
         <div className="flex-[3] space-y-2">
           <Image
-            className="max-h-[231px] rounded-lg object-cover"
+            className="max-h-[231px] rounded-lg object-cover max-md:aspect-square"
             src={image.src}
             width={image.w ?? 200}
             height={image.h ?? 300}
