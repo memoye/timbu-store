@@ -134,6 +134,31 @@ export default function CheckoutPage() {
             ))}
         </div>
       </section>
+
+      <section className="">
+        <div className="max-w-md font-semibold">
+          <p className="flex items-center justify-between text-secondary">
+            <span>Sub total</span>
+            <span>&#8358;{formatToNaira(410000)}</span>
+          </p>
+          <p className="flex items-center justify-between">
+            <span className="text-[#707678]">Delivery fee</span>
+            <span className="text-secondary">
+              &#8358;{formatToNaira(50000)}
+            </span>
+          </p>
+        </div>
+        <Link
+          href="/checkout"
+          className={buttonVariants({
+            className: "max-md:w-full",
+            fill: true,
+            size: "lg",
+          })}
+        >
+          Continue to checkout
+        </Link>
+      </section>
     </main>
   );
 }

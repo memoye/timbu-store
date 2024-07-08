@@ -19,7 +19,12 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={buttonVariants({ color, size, fill, className })}
+      className={buttonVariants({
+        color,
+        size,
+        fill,
+        className,
+      })}
       {...props}
     >
       {children}
@@ -29,7 +34,7 @@ export function Button({
 
 export function buttonVariants({ color, size, fill, className }: VariantProps) {
   return cn(
-    "hover:border-opacity-70",
+    "hover:border-opacity-70 ease scale-100 transition-transform active:scale-95",
     {
       "rounded-sm border px-2 py-1 text-sm": size === "xs",
       "rounded-md border px-2 py-1 text-base": size === "sm",
