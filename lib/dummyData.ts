@@ -363,3 +363,42 @@ export const trendingProducts = [
     },
   },
 ];
+
+export const flashSaleProducts = [
+  {
+    id: 1,
+    title: "Crispy Gown",
+    items_left: 50,
+    price: 100000,
+    discount_percentage: 50,
+    image: {
+      src: "/placeholder/flash1.jpg",
+      w: 1479,
+      h: 2480,
+    },
+  },
+  {
+    id: 2,
+    title: "Kiddies Top",
+    items_left: 45,
+    price: 150000,
+    discount_percentage: 75,
+    image: {
+      src: "/placeholder/flash2.jpg",
+      w: 1658,
+      h: 2487,
+    },
+  },
+  {
+    id: 3,
+    title: "Men German Suit",
+    items_left: 45,
+    price: 150000,
+    discount_percentage: 15,
+    image: {
+      src: "/placeholder/flash3.jpg",
+      w: 1855,
+      h: 2500,
+    },
+  },
+];
