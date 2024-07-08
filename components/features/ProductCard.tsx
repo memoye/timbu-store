@@ -72,7 +72,7 @@ export function ProductCard({ data, className }: ProductCardProps) {
             {title}
           </h3>
           <Button
-            className="hidden w-full rounded-lg max-lg:text-sm lg:block"
+            className="hidden w-full rounded-lg max-lg:text-sm xl:block"
             size="lg"
             fill
           >

@@ -17,6 +17,12 @@
   .bindX {
     @apply px-4 md:px-24;
   }
+  .bindL {
+    @apply pl-4 md:pl-24;
+  }
+  .bindR {
+    @apply pr-4 md:pr-24;
+  }
 
   .color-secondary {
     @apply bg-secondary text-custom-white;

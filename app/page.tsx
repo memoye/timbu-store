@@ -1,7 +1,9 @@
 import { BrandsSection } from "./_components/BrandsSection";
 import { HeroSection } from "./_components/HeroSection";
 import { NewCollectionsSection } from "./_components/NewCollectionsSection";
-import { ProductsSection } from "./_components/ProductsSection";
+import { TrendingCollectionsSection } from "./_components/TrendingCollectionsSection";
+import { WeddingWearsSection } from "./_components/WeddingWearsSection";
+import { FlashSaleSection } from "./_components/FlashSaleSection";
 
 export default function HomePage() {
   return (
@@ -9,7 +11,9 @@ export default function HomePage() {
       <HeroSection />
       <BrandsSection />
       <NewCollectionsSection />
-      <ProductsSection />
+      <WeddingWearsSection />
+      <TrendingCollectionsSection />
+      <FlashSaleSection />
     </main>
   );
 }

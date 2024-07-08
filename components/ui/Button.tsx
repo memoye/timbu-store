@@ -33,7 +33,8 @@ export function buttonVariants({ color, size, fill, className }: VariantProps) {
     {
       "rounded-sm border px-2 py-1 text-sm": size === "xs",
       "rounded-md border px-2 py-1 text-base": size === "sm",
-      "rounded-lg border px-6 py-1.5 text-lg": !size || size === "md",
+      "rounded-lg border px-6 py-1.5 text-lg max-lg:px-2 max-lg:text-sm":
+        !size || size === "md",
       "rounded-xl border-2 px-8 py-2.5 text-xl": size === "lg",
     },
 

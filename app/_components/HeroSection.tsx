@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
+import { Rating } from "@/components/ui/Rating";
 import { Product } from "@/lib/definitions";
 import { topProducts } from "@/lib/dummyData";
 import { cn } from "@/lib/utils";
@@ -58,7 +59,7 @@ export function HeroSection() {
                 {product.subtitle}
               </p>
             )}
-            <p>⭐⭐⭐⭐</p>
+            <Rating value={product.rating ?? 0} />
           </div>
           <ul className="my-4 block list-inside list-disc text-xl md:hidden lg:block">
             {product.features?.map((feat, i) => (

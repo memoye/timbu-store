@@ -147,7 +147,7 @@ export const topProducts = [
   },
 ];
 
-export const featuredProducts: Product[] = [
+export const featuredProducts = [
   {
     id: 1,
     title: "Western Jacket",
@@ -218,5 +218,148 @@ export const featuredProducts: Product[] = [
     price: 75000,
     reviews: 430,
     rating: 4,
+  },
+];
+
+export const featuredWeddingWears = {
+  title: "Wear to wedding",
+  desc: "We give couples a perfect touch for their wedding shoots!",
+  images: [
+    {
+      id: 1,
+      src: "/placeholder/wedding1.png",
+      alt: "Couple in white t-shirts and jeans",
+      w: 1065,
+      h: 538,
+    },
+    {
+      id: 2,
+      src: "/placeholder/wedding2.jpg",
+      alt: "Couple in gray hoodies  and sweatpants",
+      w: 3733,
+      h: 5600,
+    },
+    {
+      id: 3,
+      src: "/placeholder/wedding3.jpg",
+      alt: "A couple",
+      attr: {
+        desc: "Photo by Oktay Köseoğlu",
+        link: "https://www.pexels.com/photo/couple-in-retro-clothes-posing-on-balcony-14235300/",
+      },
+      w: 3936,
+      h: 2389,
+    },
+    {
+      id: 4,
+      src: "/placeholder/wedding4.jpg",
+      alt: "A couple in retro clothes posing on balcony",
+      attr: {
+        desc: "Photo by Oktay Köseoğlu",
+        link: "https://www.pexels.com/photo/couple-in-retro-clothes-posing-on-balcony-14235300/",
+      },
+      w: 5905,
+      h: 3937,
+    },
+    {
+      id: 5,
+      src: "/placeholder/wedding5.jpg",
+      alt: "A couple outdoors",
+      w: 5592,
+      h: 3728,
+    },
+  ],
+};
+
+export const trendingProducts = [
+  {
+    id: 1,
+    title: "Black Top",
+    image: {
+      src: "/placeholder/trending1.png",
+      w: 612,
+      h: 408,
+    },
+  },
+  {
+    id: 2,
+    title: "Round Top",
+    image: {
+      src: "/placeholder/trending2.png",
+      w: 408,
+      h: 612,
+    },
+  },
+  {
+    id: 3,
+    title: "White Top",
+    image: {
+      src: "/placeholder/trending3.png",
+      w: 408,
+      h: 612,
+    },
+  },
+  {
+    id: 4,
+    title: "Black Shirt",
+    image: {
+      src: "/placeholder/trending4.png",
+      w: 447,
+      h: 557,
+    },
+  },
+  {
+    id: 5,
+    title: "White Hoodie",
+    image: {
+      src: "/placeholder/trending5.png",
+      w: 408,
+      h: 612,
+    },
+  },
+  {
+    id: 6,
+    title: "Red Hoodie",
+    image: {
+      src: "/placeholder/trending6.png",
+      w: 612,
+      h: 408,
+    },
+  },
+  {
+    id: 7,
+    title: "Black Top",
+    image: {
+      src: "/placeholder/trending7.png",
+      w: 408,
+      h: 612,
+    },
+  },
+  {
+    id: 8,
+    title: "Blue Jean",
+    image: {
+      src: "/placeholder/trending8.png",
+      w: 431,
+      h: 579,
+    },
+  },
+  {
+    id: 9,
+    title: "Collar Hoodie",
+    image: {
+      src: "/placeholder/trending9.png",
+      w: 408,
+      h: 612,
+    },
+  },
+  {
+    id: 10,
+    title: "Black Hat",
+    image: {
+      src: "/placeholder/trending10.png",
+      w: 622,
+      h: 401,
+    },
   },
 ];

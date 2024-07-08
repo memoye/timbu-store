@@ -24,14 +24,19 @@ const config: Config = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
+        "fade-in": {
+          from: { opacity: "50%" },
+          to: { opacity: "100%" },
+        },
         "color-in": {
           from: { filter: "grayscale(100%) brightness(50%) saturate(2)" },
           to: { filter: "grayscale(0%) brightness(50%) saturate(2)" },
         },
       },
       animation: {
-        "infinite-scroll-lr": "infinite-scroll 25s linear infinite",
+        "infinite-scroll-lr": "infinite-scroll 30s linear infinite",
         "infinite-scroll-rl": "infinite-scroll 25s linear reverse",
+        "fade-in": "fade-in 0.4s ease-out forwards",
         "color-in": "color-in 2.5s ease-out forwards",
       },
     },

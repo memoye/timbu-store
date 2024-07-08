@@ -15,9 +15,9 @@ export function TextSection({
   ctaHref,
 }: TextSectionProps) {
   return (
-    <section className="bindX my-12 text-center text-secondary">
+    <div className="bindX my-12 text-center text-secondary">
       <div className="mx-auto">
-        <h2 className="text-2xl font-medium leading-snug md:font-semibold lg:text-[75px]">
+        <h2 className="mb-2 text-2xl font-semibold leading-snug lg:text-[75px]">
           {title}
         </h2>
         <p className="mx-auto max-w-md text-base md:text-lg">{description}</p>
@@ -33,6 +33,6 @@ export function TextSection({
           {ctaLabel}
         </Link>
       </div>
-    </section>
+    </div>
   );
 }

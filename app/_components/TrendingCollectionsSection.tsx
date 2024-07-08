@@ -1,17 +1,17 @@
 import { TextSection } from "@/components/ui/TextSection";
-import { NewProducts } from "./NewProducts";
+import { TrendingProducts } from "./TrendingProducts";
 
-export function NewCollectionsSection() {
+export function TrendingCollectionsSection() {
   return (
     <section>
       <TextSection
-        title="New Collections"
+        title="Trending Collections"
         description="Save your money for future use by shopping with us for all your
         afordable wears, including classic and contemporary wears."
         ctaLabel="See all collections"
         ctaHref="/"
       />
-      <NewProducts />
+      <TrendingProducts />
     </section>
   );
 }
