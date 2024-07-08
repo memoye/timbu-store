@@ -35,9 +35,12 @@ export default function CheckoutPage() {
             id="del"
           />
           <div className="">
-            <h2 className="mb-2 text-lg font-semibold lg:text-5xl">
+            <label
+              htmlFor="del"
+              className="mb-2 block text-lg font-semibold lg:text-5xl"
+            >
               Choose Delivery option
-            </h2>
+            </label>
             <div className="text-[#707678]">
               <div className="text-base font-semibold md:text-lg lg:text-xl">
                 John Debenson
@@ -68,9 +71,12 @@ export default function CheckoutPage() {
             id="pt"
           />
           <div className="">
-            <h2 className="mb-2 text-lg font-semibold lg:text-5xl">
+            <label
+              htmlFor="pt"
+              className="mb-2 block text-lg font-semibold lg:text-5xl"
+            >
               Payment Options
-            </h2>
+            </label>
             <ul className="mt-6 space-y-4">
               {["Pay Now", "Buy Now, Pay Later", "Pay on Delivery"].map(
                 (item) => (
@@ -135,8 +141,8 @@ export default function CheckoutPage() {
         </div>
       </section>
 
-      <section className="">
-        <div className="max-w-md font-semibold">
+      <section className="bindX mt-12">
+        <div className="max-w-md space-y-2 text-xl font-semibold">
           <p className="flex items-center justify-between text-secondary">
             <span>Sub total</span>
             <span>&#8358;{formatToNaira(410000)}</span>
@@ -147,16 +153,23 @@ export default function CheckoutPage() {
               &#8358;{formatToNaira(50000)}
             </span>
           </p>
+          <p className="flex items-center justify-between">
+            <span className="text-[#707678]">Delivery fee</span>
+            <span className="text-secondary">
+              &#8358;{formatToNaira(460000)}
+            </span>
+          </p>
         </div>
         <Link
-          href="/checkout"
+          href="/"
           className={buttonVariants({
-            className: "max-md:w-full",
+            className:
+              "mt-6 inline-block w-full max-w-md scale-100 text-center active:scale-95",
             fill: true,
             size: "lg",
           })}
         >
-          Continue to checkout
+          Continue to Payment
         </Link>
       </section>
     </main>
