@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function CartBtn() {
   return (
-    <button
+    <Link
+      href="/cart"
       title="Cart"
       className="flex items-center gap-2 text-secondary lg:mr-2"
       type="button"
@@ -23,6 +25,6 @@ export function CartBtn() {
       />
       <span className="sr-only text-lg font-semibold xl:not-sr-only">Cart</span>
       <span className="font-medium">3</span>
-    </button>
+    </Link>
   );
 }
