@@ -6,7 +6,7 @@ export function WeddingWearsSection() {
   const { title, desc, images } = featuredWeddingWears;
 
   return (
-    <section className="bindL my-12 pr-4 md:pr-24 lg:pr-0">
+    <section className="bindL my-12 py-12 pr-4 md:pr-24 lg:pr-0">
       <div className="flex flex-col items-center gap-4 text-secondary lg:flex-row">
         <div className="flex-1 max-lg:mx-auto max-lg:text-center xl:max-w-[331px]">
           <h2

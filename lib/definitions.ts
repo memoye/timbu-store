@@ -6,6 +6,7 @@ export interface Product {
   reviews: number;
   desc: string;
   price: number;
+  producer?: string;
   items_left: number;
   discount_percentage: number;
   image: {

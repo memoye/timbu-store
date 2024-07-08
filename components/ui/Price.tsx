@@ -1,4 +1,4 @@
-import { cn, formatToNaira } from "@/lib/utils";
+import { cn, formatToNaira, getDiscountedPrice } from "@/lib/utils";
 
 type PriceProps = {
   discount?: number;
@@ -7,9 +7,7 @@ type PriceProps = {
 };
 
 export function Price({ price, discount, className }: PriceProps) {
-  const discountedPrice = discount
-    ? price - Math.round((discount / 100) * price)
-    : null;
+  const discountedPrice = getDiscountedPrice(price, discount);
 
   return (
     <div

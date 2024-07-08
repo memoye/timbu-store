@@ -13,3 +13,7 @@ export function formatToNaira(val: number) {
 
   return Currency.format(val).slice(3).split(".")[0] ?? 0;
 }
+
+export function getDiscountedPrice(price: number, discount?: number) {
+  return discount ? price - Math.round((discount / 100) * price) : null;
+}

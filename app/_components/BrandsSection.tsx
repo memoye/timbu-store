@@ -12,7 +12,7 @@ export function BrandsSection() {
               width={305}
               height={80}
               alt={b.name}
-              className="max-w-fit max-md:w-36"
+              className="h-auto max-w-fit max-md:w-36"
             />
           </li>
         ))}
@@ -25,7 +25,7 @@ export function BrandsSection() {
               width={305}
               height={80}
               alt={b.name}
-              className="max-w-fit max-md:w-36"
+              className="h-auto max-w-fit max-md:w-36"
             />
           </li>
         ))}
@@ -38,7 +38,7 @@ export function BrandsSection() {
               width={305}
               height={80}
               alt={b.name}
-              className="max-w-fit max-md:w-36"
+              className="h-auto max-w-fit max-md:w-36"
             />
           </li>
         ))}

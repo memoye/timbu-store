@@ -168,6 +168,7 @@ export const featuredProducts = [
     id: 2,
     title: "Complete Wear",
     desc: "A complete outfit",
+    producer: "Felicia brand",
     image: { src: "/placeholder/prod2.jpg", w: 1666, h: 2487 },
     discount_percentage: 40,
     items_left: 30,
@@ -189,6 +190,7 @@ export const featuredProducts = [
   {
     id: 4,
     title: "German Suit",
+    producer: "Gabina brand",
     desc: "Suit",
     image: { src: "/placeholder/prod4.jpg", w: 1666, h: 2480 },
     discount_percentage: 40,
@@ -209,8 +211,9 @@ export const featuredProducts = [
     rating: 4,
   },
   {
-    id: 5,
+    id: 6,
     title: "Blue Hoodie",
+    producer: "Dolce brand",
     desc: "hoodie",
     image: { src: "/placeholder/prod6.jpg", w: 1389, h: 1807 },
     discount_percentage: 40,

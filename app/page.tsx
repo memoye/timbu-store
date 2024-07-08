@@ -7,7 +7,7 @@ import { FlashSaleSection } from "./_components/FlashSaleSection";
 
 export default function HomePage() {
   return (
-    <main className="min-h-dvh bg-custom-white">
+    <main className="min-h-dvh">
       <HeroSection />
       <BrandsSection />
       <NewCollectionsSection />

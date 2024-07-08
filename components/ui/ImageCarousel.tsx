@@ -43,6 +43,7 @@ export function ImageCarousel({
         alt={alt}
         height={h}
         width={w}
+        priority={true}
       />
       <ul className="mt-6 flex gap-2 max-lg:absolute max-lg:bottom-2 max-lg:left-4 lg:gap-4">
         {images.map((img, i) => (
