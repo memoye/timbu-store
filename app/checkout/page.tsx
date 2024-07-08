@@ -106,11 +106,11 @@ export default function CheckoutPage() {
       </section>
       <hr className="border-b border-b-secondary/50" />
       <section className="bindX py-6">
-        <h2 className="mt-4 text-center text-lg font-semibold lg:mb-10 lg:text-5xl">
+        <h2 className="mb-6 mt-4 text-center text-lg font-semibold lg:mb-10 lg:text-5xl">
           Payment Options
         </h2>
 
-        <div className="flex items-center gap-4 lg:gap-10">
+        <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-center lg:gap-10">
           {featuredProducts
             .filter((item) => [2, 4, 6].includes(item.id))
             .map((item) => ({
@@ -142,7 +142,7 @@ export default function CheckoutPage() {
       </section>
 
       <section className="bindX mt-12">
-        <div className="max-w-md space-y-2 text-xl font-semibold">
+        <div className="w-full space-y-2 text-xl font-semibold lg:max-w-md">
           <p className="flex items-center justify-between text-secondary">
             <span>Sub total</span>
             <span>&#8358;{formatToNaira(410000)}</span>
@@ -164,7 +164,7 @@ export default function CheckoutPage() {
           href="/"
           className={buttonVariants({
             className:
-              "mt-6 inline-block w-full max-w-md scale-100 text-center active:scale-95",
+              "mt-6 inline-block w-full scale-100 text-center active:scale-95 md:w-fit lg:max-w-md",
             fill: true,
             size: "lg",
           })}
