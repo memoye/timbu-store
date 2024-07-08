@@ -33,7 +33,8 @@ export function Cart() {
         </tbody>
       </table>
 
-      <div className={"flex w-full flex-col gap-4 md:hidden"}>
+      {/*  mobile */}
+      <div className="flex w-full flex-col gap-4 md:!hidden">
         {cartItems.map((item) => (
           <Fragment key={item.id}>
             <CartItem item={item} quantity={item.qty} />

@@ -1,7 +1,8 @@
 import { formatToNaira } from "@/lib/utils";
 import { Cart } from "../_components/Cart";
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
+import { Button, buttonVariants } from "@/components/ui/Button";
+import Link from "next/link";
 
 export default function CartPage() {
   return (
@@ -39,9 +40,16 @@ export default function CartPage() {
           </span>
         </p>
 
-        <Button className="max-md:w-full" size="lg" fill>
-          Continue to Dashboard
-        </Button>
+        <Link
+          href="/checkout"
+          className={buttonVariants({
+            className: "max-md:w-full",
+            fill: true,
+            size: "lg",
+          })}
+        >
+          Continue to checkout
+        </Link>
       </section>
     </main>
   );

@@ -58,7 +58,7 @@ export function CartItem({ item, quantity }: CartItemProps) {
         </div>
       </td>
 
-      <div className="flex gap-2">
+      <div className="flex gap-2 md:hidden">
         <Image
           className="max-h-[130px] max-w-[135px] rounded-lg object-cover"
           src={item.image.src}
@@ -67,8 +67,8 @@ export function CartItem({ item, quantity }: CartItemProps) {
           alt={item.image?.alt ?? item.title}
         />
 
-        <div className="space-y-2">
-          <div className="-space-y-2 font-semibold leading-none max-lg:text-lg">
+        <div className="space-y-1">
+          <div className="-space-y-1 font-semibold leading-none max-lg:text-lg">
             <h3 className="">{item.title}</h3>
             {item.producer && (
               <p className="text-[#707678] max-lg:text-base">
@@ -81,10 +81,10 @@ export function CartItem({ item, quantity }: CartItemProps) {
             max={item.items_left}
             onChange={handleQtyChange}
           />
-          <div className="flex flex-col -space-y-2 text-lg font-semibold">
+          <div className="flex flex-col -space-y-1 text-lg font-semibold">
             <span className="inline-block">&#8358;{formatToNaira(total)}</span>
             {item.producer && (
-              <span className="inline-block text-base text-[#707678]">
+              <span className="inline-block text-sm text-[#707678]">
                 &#8358;{formatToNaira(discountedPrice)} &times; {qty}
               </span>
             )}
