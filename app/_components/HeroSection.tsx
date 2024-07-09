@@ -25,7 +25,7 @@ export function HeroSection() {
         <div className="relative h-full overflow-hidden rounded-2xl text-lg md:flex-[2] xl:min-w-[827px]">
           <div className="px-4 py-8 lg:absolute lg:inset-0 lg:flex lg:items-end lg:text-custom-white">
             <div className="z-[10] max-lg:text-center">
-              <h1 className="text-4xl font-semibold leading-none md:text-[55px]">
+              <h1 className="text-4xl font-semibold leading-snug md:text-[55px]">
                 VirgoWears Digital Collection
               </h1>
               <p className="mt-4 max-w-md text-xl font-medium max-lg:mx-auto">

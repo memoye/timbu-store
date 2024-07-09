@@ -13,15 +13,15 @@ export function Header() {
         <Nav />
 
         <div className="flex items-center gap-1 xl:gap-8">
-          <div className="lg:hidden">
-            <WishlistBtn />
-          </div>
           <SearchBar />
           <div className="flex items-center gap-4">
             <CartBtn />
             <div className="hidden lg:inline-block">
               <UserBtn />
             </div>
+          </div>
+          <div className="lg:hidden">
+            <UserBtn />
           </div>
         </div>
       </header>

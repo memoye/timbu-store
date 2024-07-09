@@ -15,7 +15,7 @@ export function SearchBar({ className }: SearchBarProps) {
     <>
       <form
         className={cn(
-          "fixed py-2 transition-transform max-lg:inset-x-0 max-lg:flex max-lg:items-center max-lg:justify-center max-lg:bg-custom-white lg:relative",
+          "fixed z-20 bg-custom-white py-2 transition-transform max-lg:inset-x-0 max-lg:flex max-lg:items-center max-lg:justify-center max-lg:bg-custom-white lg:relative",
           isOpen ? "max-lg:translate-y-0" : "max-lg:-translate-y-40",
           className,
         )}

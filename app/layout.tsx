@@ -18,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-custom-white antialiased`}>
+      <body
+        className={`${inter.className} scroll-smooth bg-custom-white antialiased`}
+      >
         <Header />
         {children}
         <Footer />

@@ -6,7 +6,7 @@ export function CartBtn() {
     <Link
       href="/cart"
       title="Cart"
-      className="flex items-center gap-2 text-secondary lg:mr-2"
+      className="relative flex items-center gap-2 text-secondary lg:mr-2"
       type="button"
     >
       <Image
@@ -18,13 +18,15 @@ export function CartBtn() {
       />
       <Image
         src={"/cart_mobile.svg"}
-        className="inline-block lg:hidden"
+        className="relative inline-block lg:hidden"
         width={24}
         height={24}
         alt="shopping cart"
       />
       <span className="sr-only text-lg font-semibold xl:not-sr-only">Cart</span>
-      <span className="font-medium">3</span>
+      <span className="font-medium max-lg:absolute max-lg:-right-4 max-lg:-top-2 max-lg:scale-75 max-lg:rounded-full max-lg:bg-secondary max-lg:px-2 max-lg:py-1 max-lg:text-xs max-lg:text-custom-white">
+        3
+      </span>
     </Link>
   );
 }

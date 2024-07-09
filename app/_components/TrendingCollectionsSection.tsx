@@ -3,7 +3,7 @@ import { TrendingProducts } from "./TrendingProducts";
 
 export function TrendingCollectionsSection() {
   return (
-    <section className="py-12">
+    <section className="py-12" id="trending">
       <TextSection
         title="Trending Collections"
         description="Save your money for future use by shopping with us for all your
