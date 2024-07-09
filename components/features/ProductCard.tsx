@@ -3,7 +3,8 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Price } from "../ui/Price";
 import { Rating } from "../ui/Rating";
-import { Button } from "../ui/Button";
+import { Button, buttonVariants } from "../ui/Button";
+import Link from "next/link";
 
 type ProductCardProps = {
   data: Product;
@@ -71,13 +72,16 @@ export function ProductCard({ data, className }: ProductCardProps) {
           >
             {title}
           </h3>
-          <Button
-            className="hidden w-full rounded-lg max-lg:text-sm xl:block"
-            size="lg"
-            fill
+          <Link
+            href={`/products/${id}`}
+            className={buttonVariants({
+              className: "hidden w-full rounded-lg max-lg:text-sm xl:block",
+              size: "lg",
+              fill: true,
+            })}
           >
             Buy Now
-          </Button>
+          </Link>
         </div>
 
         {/* right side */}
